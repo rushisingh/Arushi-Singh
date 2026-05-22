@@ -1,1 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arushi Singh — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo" onclick="showSection('home')">AS</div>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showSection('about')">About</a></li>
+      <li><a href="#" onclick="showSection('experience')">Experience</a></li>
+      <li><a href="#" onclick="showSection('education')">Education</a></li>
+      <li><a href="#" onclick="showSection('papers')">Papers</a></li>
+      <li><a href="#" onclick="showSection('blogs')">Research Blogs</a></li>
+      <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      <li><a href="resume.pdf" target="_blank" class="nav-resume">CV ↗</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#" onclick="showSection('about'); toggleMobileMenu()">About</a>
+    <a href="#" onclick="showSection('experience'); toggleMobileMenu()">Experience</a>
+    <a href="#" onclick="showSection('education'); toggleMobileMenu()">Education</a>
+    <a href="#" onclick="showSection('papers'); toggleMobileMenu()">Papers</a>
+    <a href="#" onclick="showSection('blogs'); toggleMobileMenu()">Research Blogs</a>
+    <a href="#" onclick="showSection('contact'); toggleMobileMenu()">Contact</a>
+    <a href="resume.pdf" target="_blank">CV ↗</a>
+  </div>
+
+  <!-- ═══════════ HOME ═══════════ -->
+  <section id="home" class="page active">
+    <div class="hero">
+      <div class="hero-text">
+        <span class="hero-greeting">Hello, I'm</span>
+        <h1 class="hero-name">Arushi<br/><em>Singh</em></h1>
+        <p class="hero-tagline">Researcher · Scholar · Builder</p>
+        <div class="hero-cta">
+          <button onclick="showSection('about')" class="btn-primary">View My Work</button>
+          <a href="resume.pdf" target="_blank" class="btn-secondary">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-orb"></div>
+    </div>
+
+    <!-- Sliding ticker -->
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <!-- duplicate for seamless loop -->
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+        <span>ARUSHI SINGH</span><span class="dot">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section id="about" class="page">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">01 / About</span>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-bio">
+          <p class="lead">I am a researcher and scholar passionate about [your field]. My work sits at the intersection of [domain A] and [domain B], driven by the belief that rigorous research can shape a better world.</p>
+          <p>When I'm not writing papers or running experiments, you'll find me exploring ideas at the edges of disciplines, mentoring peers, and contributing to open knowledge.</p>
+          <a href="resume.pdf" target="_blank" class="btn-primary" style="margin-top:2rem;display:inline-block;">Download Full CV ↗</a>
+        </div>
+        <div class="about-skills">
+          <h3>Skills &amp; Expertise</h3>
+          <div class="skill-tags">
+            <span>Research Design</span>
+            <span>Data Analysis</span>
+            <span>Academic Writing</span>
+            <span>Python</span>
+            <span>R / Statistics</span>
+            <span>Literature Review</span>
+            <span>Machine Learning</span>
+            <span>Public Speaking</span>
+            <span>Grant Writing</span>
+            <span>Peer Review</span>
+            <span>Critical Thinking</span>
+            <span>Science Communication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ EXPERIENCE ═══════════ -->
+  <section id="experience" class="page">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">02 / Experience</span>
+        <h2>Where I've Worked</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-year">2023 — Present</div>
+          <div class="timeline-content">
+            <h3>Research Associate</h3>
+            <span class="org">University / Institute Name</span>
+            <p>Led research initiatives in [area], collaborating across departments to develop novel methodologies and produce impactful publications.</p>
+            <div class="tags"><span>Research</span><span>Leadership</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2021 — 2023</div>
+          <div class="timeline-content">
+            <h3>Research Intern</h3>
+            <span class="org">Organization Name</span>
+            <p>Conducted [type] analysis and contributed to [project/publication]. Developed skills in [tools/methods].</p>
+            <div class="tags"><span>Analysis</span><span>Collaboration</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2020 — 2021</div>
+          <div class="timeline-content">
+            <h3>Teaching Assistant</h3>
+            <span class="org">Department, University</span>
+            <p>Assisted in [course name], graded assignments, led recitation sections, and held office hours for 80+ students.</p>
+            <div class="tags"><span>Teaching</span><span>Mentorship</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ EDUCATION ═══════════ -->
+  <section id="education" class="page">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">03 / Education</span>
+        <h2>Academic Background</h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card">
+          <div class="edu-degree">Ph.D. in [Field]</div>
+          <div class="edu-school">University Name</div>
+          <div class="edu-year">2021 — Present</div>
+          <p>Dissertation: <em>"[Your Dissertation Title]"</em>. Advised by Prof. [Name]. Focus on [research area].</p>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-degree">M.S. in [Field]</div>
+          <div class="edu-school">University Name</div>
+          <div class="edu-year">2019 — 2021</div>
+          <p>Thesis: <em>"[Thesis Title]"</em>. GPA: [X.X]. Relevant coursework in [subjects].</p>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-degree">B.S. in [Field]</div>
+          <div class="edu-school">University Name</div>
+          <div class="edu-year">2015 — 2019</div>
+          <p>Graduated with honors. Dean's List. Activities: [clubs, organizations].</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PAPERS ═══════════ -->
+  <section id="papers" class="page">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">04 / Publications</span>
+        <h2>Published Papers</h2>
+      </div>
+      <div class="papers-list">
+
+        <div class="paper-item">
+          <div class="paper-meta">
+            <span class="paper-year">2024</span>
+            <span class="paper-venue">Journal of [Field] · Peer-Reviewed</span>
+          </div>
+          <h3 class="paper-title">Your Paper Title Goes Here: A Study of Something Meaningful</h3>
+          <p class="paper-authors">Singh, A., Co-Author, B., &amp; Co-Author, C.</p>
+          <p class="paper-abstract">A concise description of what this paper investigates, the methodology used, and the key findings or contributions it makes to the field.</p>
+          <div class="paper-links">
+            <a href="#" class="paper-btn">Read Paper ↗</a>
+            <a href="#" class="paper-btn outline">DOI ↗</a>
+          </div>
+        </div>
+
+        <div class="paper-item">
+          <div class="paper-meta">
+            <span class="paper-year">2023</span>
+            <span class="paper-venue">Conference on [Topic] · Proceedings</span>
+          </div>
+          <h3 class="paper-title">Second Paper Title: Insights Into Another Important Question</h3>
+          <p class="paper-authors">Singh, A. &amp; Co-Author, D.</p>
+          <p class="paper-abstract">Brief summary of this paper's research question, approach, and impact. What gap in the literature does this address?</p>
+          <div class="paper-links">
+            <a href="#" class="paper-btn">Read Paper ↗</a>
+            <a href="#" class="paper-btn outline">arXiv ↗</a>
+          </div>
+        </div>
+
+        <div class="paper-item">
+          <div class="paper-meta">
+            <span class="paper-year">2022</span>
+            <span class="paper-venue">International Journal of [Topic]</span>
+          </div>
+          <h3 class="paper-title">Third Paper: Exploring the Boundaries of [Research Area]</h3>
+          <p class="paper-authors">Singh, A., Co-Author, E., &amp; Co-Author, F.</p>
+          <p class="paper-abstract">Description of contributions, datasets used, and broader implications for policy or practice.</p>
+          <div class="paper-links">
+            <a href="#" class="paper-btn">Read Paper ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ BLOGS ═══════════ -->
+  <section id="blogs" class="page">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">05 / Writing</span>
+        <h2>Research Blogs</h2>
+      </div>
+      <div class="blogs-grid">
+
+        <a href="https://yourblog.com/post-1" target="_blank" class="blog-card">
+          <div class="blog-tag">Machine Learning</div>
+          <h3>Blog Post Title: Explaining a Complex Idea Simply</h3>
+          <p>A short preview of what this blog post covers. Engaging, accessible writing about your research for a broader audience.</p>
+          <span class="blog-date">March 2024</span>
+          <span class="blog-arrow">↗</span>
+        </a>
+
+        <a href="https://yourblog.com/post-2" target="_blank" class="blog-card">
+          <div class="blog-tag">Policy</div>
+          <h3>What My Research Says About [Timely Topic]</h3>
+          <p>How findings from the lab connect to real-world implications and policy recommendations in [domain].</p>
+          <span class="blog-date">November 2023</span>
+          <span class="blog-arrow">↗</span>
+        </a>
+
+        <a href="https://yourblog.com/post-3" target="_blank" class="blog-card">
+          <div class="blog-tag">Methods</div>
+          <h3>A Beginner's Guide to [Method or Tool]</h3>
+          <p>Breaking down a technical methodology into approachable steps for students and practitioners new to the field.</p>
+          <span class="blog-date">July 2023</span>
+          <span class="blog-arrow">↗</span>
+        </a>
+
+        <a href="https://yourblog.com/post-4" target="_blank" class="blog-card">
+          <div class="blog-tag">Opinion</div>
+          <h3>Why [Research Question] Matters Now More Than Ever</h3>
+          <p>A perspective piece on the urgency of your research area, written for a general academic audience.</p>
+          <span class="blog-date">February 2023</span>
+          <span class="blog-arrow">↗</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section id="contact" class="page">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">06 / Contact</span>
+        <h2>Get In Touch</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-intro">
+          <p class="lead">I'm always open to collaborations, speaking invitations, or just a good conversation about research. Feel free to reach out.</p>
+          <div class="contact-links">
+            <a href="mailto:arushi@example.com" class="contact-link">
+              <span class="contact-icon">✉</span>
+              arushi@example.com
+            </a>
+            <a href="https://linkedin.com/in/arushisingh" target="_blank" class="contact-link">
+              <span class="contact-icon">in</span>
+              LinkedIn ↗
+            </a>
+            <a href="https://github.com/arushisingh" target="_blank" class="contact-link">
+              <span class="contact-icon">⌥</span>
+              GitHub ↗
+            </a>
+            <a href="https://scholar.google.com" target="_blank" class="contact-link">
+              <span class="contact-icon">◎</span>
+              Google Scholar ↗
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message →</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-name">Arushi Singh</div>
+      <nav class="footer-nav">
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('experience')">Experience</a>
+        <a href="#" onclick="showSection('education')">Education</a>
+        <a href="#" onclick="showSection('papers')">Papers</a>
+        <a href="#" onclick="showSection('blogs')">Research Blogs</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+        <a href="resume.pdf" target="_blank">CV ↗</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Arushi Singh. All rights reserved.</span>
+      <span>Built with care ♥</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
